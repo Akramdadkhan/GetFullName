@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-name</title>
+    <script>
+      function getFullname() {
+        var Abc = document.getElementById("fname").value;
+        var Def = document.getElementById("lname").value;
+
+        document.getElementById("fullname").value = Abc + " " + Def;
+      }
+      function bhadwa() {
+        document.getElementById("fname").value = " ";
+        document.getElementById("lname").value = " ";
+        document.getElementById("fullname").value = " ";
+      }
+    </script>
+  </head>
+  <body>
+    <label for="">First Name</label>
+    <input type="text" id="fname" /><br /><br />
+
+    <label for="">Last Name</label>
+    <input type="text" id="lname" /><br /><br />
+
+    <button onclick="getFullname()">Submit</button>
+    <button onclick="bhadwa()">Cancel</button><br /><br />
+
+    <label for=" ">Full Name</label>
+    <input type="text" id="fullname" />
+  </body>
+</html>
